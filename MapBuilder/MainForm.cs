@@ -167,6 +167,8 @@ namespace MapBuilder
                 waypoints = new List<Node>(); // создадим пустой список вейпоинтов
                 for (int i = 0; i <= countpoints; i++)
                 {
+		    if (countpoints == 0)
+                        break; // если нет ни одного вейпоинта
                     try
                     {
                         int obr = 0;
