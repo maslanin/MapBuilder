@@ -351,7 +351,7 @@ namespace MapBuilder
             {
                 for (int i = 0; i < tlp.Count; i++)
                 {
-                    if (tlp[i].X1 != tlp[i].X2 && tlp[i].Y1 != tlp[i].Y2)
+                    if (tlp[i].X1 != tlp[i].X2 || tlp[i].Y1 != tlp[i].Y2)
                     {
                         Pen p = new Pen(Color.Green);
                         g.DrawLine(p, tlp[i].X1 * zoom + zoom / 2, tlp[i].Y1 * zoom + zoom / 2, tlp[i].X2 * zoom + zoom / 2, tlp[i].Y2 * zoom + zoom / 2);
@@ -449,7 +449,7 @@ namespace MapBuilder
             {
                 for (int i = 0; i < tlp.Count - 1; i++)
                 {
-                    if (tlp[i].X1 != tlp[i].X2 && tlp[i].Y1 != tlp[i].Y2)
+                    if (tlp[i].X1 != tlp[i].X2 || tlp[i].Y1 != tlp[i].Y2)
                     {
                         Pen p = new Pen(Color.Green);
                         g.DrawLine(p, tlp[i].X1 * 10 + 5, tlp[i].Y1 * 10 + 5, tlp[i].X2 * 10 + 5, tlp[i].Y2 * 10 + 5);
